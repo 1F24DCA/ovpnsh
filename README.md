@@ -9,7 +9,7 @@ https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server
 &nbsp;- when you select OS, please select Ubuntu. my shell script only works in Ubuntu  
 2. download and put "ovpnsh" folder in home directory(~, /home/ubuntu, etc..) of your server  
 3. type "chmod -R +x ovpnsh" in your shell to make shell script executable  
-4. type "nano ovpnsh/config.cfg" or "vi opensh/config.cfg" and modify configs  
+4. type "nano ovpnsh/config.cfg" or "vi ovpnsh/config.cfg" and modify configs  
 &nbsp;- you should change "SERVER_IP" to your Public IP of your server  
 5. type "./ovpnsh/build.sh", and you can install OpenVPN server  
 &nbsp;- when console require type "yes", type "yes" and press enter.  
