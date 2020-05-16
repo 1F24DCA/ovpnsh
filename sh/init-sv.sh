@@ -18,11 +18,11 @@ sudo cp sysctl.conf.2.temp /etc/sysctl.conf
 
 sudo sysctl -p
 
-CHECK_BEFORE_RULES=$(<(sudo cat /etc/ufw/before.rules|grep 'OPENVPN RULES'))
-if [ "$CHECK_BEFORE_RULES" == "" ]; then
-    ETHERNET_ID=`ip route|grep default|sed -r 's/^default via .* dev (.*) proto .*$/\1/'`
+ETHERNET_ID=`ip route|grep default|sed -r 's/^default via .* dev (.*) proto .*$/\1/'`
 
-    sudo cp /etc/ufw/before.rules before.rules.temp
+sudo cp /etc/ufw/before.rules before.rules.temp
+CHECK_BEFORE_RULES=$(<(sudo cat before.rules.temp|grep 'OPENVPN RULES'))
+if [ "$CHECK_BEFORE_RULES" == "" ]; then
     echo -e '\n\n# START OPENVPN RULES'>>before.rules.temp
     echo -e '*nat'>>before.rules.temp
     echo -e ':POSTROUTING ACCEPT [0:0]'>>before.rules.temp
