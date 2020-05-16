@@ -1,0 +1,21 @@
+# DON'T EDIT THIS SECTION
+if [ -z "$EASYRSA_CALLER" ]; then
+	echo "You appear to be sourcing an Easy-RSA 'vars' file." >&2
+	echo "This is no longer necessary and is disallowed. See the section called" >&2
+	echo "'How to use this file' near the top comments for more details." >&2
+	return 1
+fi
+# DO YOUR EDITS BELOW THIS POINT
+
+# Organizational fields
+# These are the default values for fields which will be placed in the
+# certificate.  Don't leave any of these fields blank, although interactively
+# you may omit any specific field by typing the "." symbol (not valid for
+# email.)
+
+set_var EASYRSA_REQ_COUNTRY		"US"
+set_var EASYRSA_REQ_PROVINCE	"California"
+set_var EASYRSA_REQ_CITY		"Pleasanton"
+set_var EASYRSA_REQ_ORG	    	"OpenVPN Inc."
+set_var EASYRSA_REQ_EMAIL		"anonymous@openvpn.net"
+set_var EASYRSA_REQ_OU			"Anonymous"
