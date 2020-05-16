@@ -5,6 +5,7 @@ cd ${SHELL_PWD}
 
 EASYRSA_VERSION=`cat config.conf|grep EASYRSA_VERSION|sed -r 's/^EASYRSA_VERSION[[:space:]]*=[[:space:]]*(.*)$/\1/'`
 
+sudo apt update
 sudo apt install openvpn
 
 ./sh/inst-rsa.sh
