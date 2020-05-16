@@ -6,6 +6,9 @@ https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server
 
 this shell scripts is useful at toolkid's DDoS attack when you playing games using P2P connection.
 
+# Sorry
+I'm not good at programming, so it's poor quality script.
+
 # Usage:
 1. buy new server (I recommend cloud service like AWS Lightsail)  
 &nbsp;- when you select OS, please select Ubuntu. my shell script only works in Ubuntu  
