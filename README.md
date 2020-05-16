@@ -12,7 +12,7 @@ this shell scripts is useful at toolkid's DDoS attack when you playing games usi
 2. download and put "ovpnsh" folder in home directory(~, /home/ubuntu, etc..) of your server  
 &nbsp;- type "git clone https://github.com/1F24DCA/ovpnsh" in your bash shell to download, or you can use FTP
 3. type "chmod -R +x ovpnsh" in your shell to make shell script executable  
-4. type "nano ovpnsh/config.cfg" or "vi ovpnsh/config.cfg" and modify configs  
+4. type "nano ovpnsh/config.conf" or "vi ovpnsh/config.conf" and modify configs  
 &nbsp;- you should change "SERVER_IP" to your Public IP of your server  
 5. type "./ovpnsh/build.sh", and you can install OpenVPN server  
 &nbsp;- when console require type "yes", type "yes" and press enter.  
