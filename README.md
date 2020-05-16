@@ -8,6 +8,7 @@ this shell scripts is useful at toolkid's DDoS attack when you playing games usi
 
 # Sorry
 I'm not good at programming, so it's poor quality script.
+It not have error-checking, so you have to backup before use this shell scripts.
 
 # Usage:
 1. buy new server (I recommend cloud service like AWS Lightsail)  
