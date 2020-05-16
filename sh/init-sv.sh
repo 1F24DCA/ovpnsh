@@ -18,7 +18,7 @@ sudo cp sysctl.conf.2.temp /etc/sysctl.conf
 
 sudo sysctl -p
 
-CHECK_BEFORE_RULES=$(<(cat /etc/ufw/before.rules|grep 'OPENVPN RULES'))
+CHECK_BEFORE_RULES=$(<(sudo cat /etc/ufw/before.rules|grep 'OPENVPN RULES'))
 if [ "$CHECK_BEFORE_RULES" == "" ]; then
     ETHERNET_ID=`ip route|grep default|sed -r 's/^default via .* dev (.*) proto .*$/\1/'`
 
