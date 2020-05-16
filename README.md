@@ -10,6 +10,7 @@ this shell scripts is useful at toolkid's DDoS attack when you playing games usi
 1. buy new server (I recommend cloud service like AWS Lightsail)  
 &nbsp;- when you select OS, please select Ubuntu. my shell script only works in Ubuntu  
 2. download and put "ovpnsh" folder in home directory(~, /home/ubuntu, etc..) of your server  
+&nbsp;- type "git clone https://github.com/1F24DCA/ovpnsh" in your bash shell to download, or you can use FTP
 3. type "chmod -R +x ovpnsh" in your shell to make shell script executable  
 4. type "nano ovpnsh/config.cfg" or "vi ovpnsh/config.cfg" and modify configs  
 &nbsp;- you should change "SERVER_IP" to your Public IP of your server  
