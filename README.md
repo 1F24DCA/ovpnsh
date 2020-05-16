@@ -4,6 +4,8 @@ OpenVPN server build shell script for individual (need cloud service like AWS)
 I referenced this site when make shell scripts:
 https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-18-04
 
+this shell scripts is useful at toolkid's DDoS attack when you playing games using P2P connection.
+
 # Usage:
 1. buy new server (I recommend cloud service like AWS Lightsail)  
 &nbsp;- when you select OS, please select Ubuntu. my shell script only works in Ubuntu  
