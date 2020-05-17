@@ -4,8 +4,6 @@ OpenVPN server build shell script for individual (need cloud service like AWS)
 I referenced this site when make shell scripts:
 https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-18-04
 
-this shell scripts is useful at toolkid's DDoS attack when you playing games using P2P connection.
-
 # Sorry
 I'm not good at programming, so it's poor quality script  
 It not have error-checking, so you have to backup before use this shell scripts (ovpnsh/sh/init-sv.sh will change your system files)
